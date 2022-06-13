@@ -4,8 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing page</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Landing page 1</title>
+    <script
+      src="https://kit.fontawesome.com/272c8d7e5d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/section1.css" />
+    <link rel="stylesheet" href="css/section2.css" />
   </head>
   <body>
     <header>
@@ -14,12 +27,15 @@
           <img src="images/logo-magtimus-v2.3-1.png" alt="" />
         </div>
         <div class="menu">
-          <nav>
+          <i class="fa-solid fa-bars" id="btn_menu"></i>
+          <div id="back_menu"></div>
+          <nav id="nav">
+            <img src="images/logo-magtimus-v2.3-1.png" alt="" />
             <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Nosotros</a></li>
-              <li><a href="#">Contactos</a></li>
+              <li><a href="#inicio" class="selected">Inicio</a></li>
+              <li><a href="#servicios" class="selected">Servicios</a></li>
+              <li><a href="#" class="selected">Nosotros</a></li>
+              <li><a href="#" class="selected">Contactos</a></li>
             </ul>
           </nav>
         </div>
@@ -27,6 +43,7 @@
     </header>
 
     <main>
+      <a name="inicio"></a>
       <div class="container__cover">
         <div class="cover">
           <div class="text">
@@ -41,12 +58,77 @@
             </p>
             <input type="button" value="Leer Más" />
           </div>
-          
+
           <div class="svg">
             <img src="images/developer_activity.svg" alt="" />
           </div>
         </div>
       </div>
+
+      <!-- Section 2 -->
+      <div class="section-wrapper">
+
+        <h1>Elegant Hover</h1>
+
+        <div class="container__box">
+          <div class="box">
+            <i class="lni lni-amazon"></i>
+            <h5>Amazon</h5>
+            <h4>Amazon</h4>
+          </div>
+          <div class="box">
+            <i class="lni lni-spotify"></i>
+            <h5>Spotify</h5>
+            <h4>Spotify</h4>
+          </div>
+          <div class="box">
+            <i class="lni lni-app-store"></i>
+            <h5>App Store</h5>
+            <h4>App Store</h4>
+          </div>
+          <div class="box">
+            <i class="lni lni-behance"></i>
+            <h5>Behance</h5>
+            <h4>Behance</h4>
+          </div>
+          <div class="box">
+            <i class="lni lni-chrome"></i>
+            <h5>Chrome</h5>
+            <h4>Chrome</h4>
+          </div>
+          <div class="box">
+            <i class="lni lni-css3"></i>
+            <h5>CSS3</h5>
+            <h4>CSS3</h4>
+          </div>
+          <div class="box">
+            <i class="lni lni-html5"></i>
+            <h5>HTML5</h5>
+            <h4>HTML5</h4>
+          </div>
+          <div class="box">
+            <i class="lni lni-github-original"></i>
+            <h5>Github</h5>
+            <h4>Github</h4>
+          </div>
+          <div class="box">
+            <i class="lni lni-paypal"></i>
+            <h5>Paypal</h5>
+            <h4>Paypal</h4>
+          </div>
+          <div class="box">
+            <i class="lni lni-play-store"></i>
+            <h5>Play Store</h5>
+            <h4>Play Store</h4>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 100%; height: 500px; background-color: #dfdfdf;">
+
+      </div>
     </main>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>
