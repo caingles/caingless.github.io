@@ -2,21 +2,22 @@ html {
     scroll-behavior: smooth;
   }
   
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
-    
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  
+}
   /* Inicio del header */
   header {
     width: 100%;
     height: 80px;
-    margin-top: 10px;
+    padding-top: 10px;
     position: fixed;
-    z-index: 1;
-    background-color: #eba3a300;
+    z-index: 2;
+    background-color: transparent;
+    transition: all 300ms;
   }
   
   .container__menu {
